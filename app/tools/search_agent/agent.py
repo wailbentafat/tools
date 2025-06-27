@@ -2,7 +2,7 @@ from google.adk.agents import Agent
 from google.adk.tools import google_search
 
 root_agent = Agent(
-    name="weather_time_agent",
+    name="Search_agent",
     model="gemini-2.0-flash",
     description=(
         "A specialized agent that uses Google Search to find travel information, "
@@ -31,3 +31,4 @@ root_agent = Agent(
 
     tools=[google_search],
 )
+__all__ = ["search_agent"]
