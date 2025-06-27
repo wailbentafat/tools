@@ -98,8 +98,7 @@ async def get_trip_statistics():
     Get aggregated statistics about the trips in the database.
     This includes total count, average price, price range, and status distribution.
     """
-    # NOTE: Your original service method was incomplete here. 
-    # I've completed the logic based on the comments.
+   
     conn = await service.get_connection()
     try:
         total_count = await conn.fetchval('SELECT COUNT(*) FROM "Trip"')
